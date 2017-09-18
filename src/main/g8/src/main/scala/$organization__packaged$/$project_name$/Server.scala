@@ -1,4 +1,4 @@
-package net.habashi.cicero
+package $organization$.$project_name$
 
 import akka.actor.{ActorSystem, Props}
 import akka.http.scaladsl.Http

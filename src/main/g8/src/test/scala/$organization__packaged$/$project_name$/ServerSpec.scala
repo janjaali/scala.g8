@@ -1,4 +1,4 @@
-package net.habashi.cicero
+package $organization$.$project_name$
 
 import akka.http.scaladsl.testkit.ScalatestRouteTest
 import org.scalatest.{Matchers, WordSpec}
