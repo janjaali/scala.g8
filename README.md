@@ -5,5 +5,5 @@ Simple g8 skeleton for akka-http (scala api)
 Giter the template
 
 ```
-g8 janjaali/akk-http.g8
+g8 janjaali/akka-http.g8
 ```
