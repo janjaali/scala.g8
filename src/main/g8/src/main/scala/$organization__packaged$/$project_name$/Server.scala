@@ -22,9 +22,7 @@ object Server extends App with LazyLogging {
 
   implicit private val materializer = ActorMaterializer()
 
-  private val host = "0.0.0.0"
-
-  private val port = 8080
+  private val (host, port) = ("0.0.0.0", 8080)
 
   private val exceptionHandler = ExceptionHandler {
     case ex: Exception =>
@@ -39,9 +37,9 @@ object Server extends App with LazyLogging {
       }
     }
 
-  private val bindingFuture = Http().bindAndHandle(route, endpoint, port)
+  private val bindingFuture = Http().bindAndHandle(route, host, port)
 
-  logger.info(s"Server started on \$endpoint:\$port. Press RETURN to stop ...")
+  logger.info(s"Server started on \$host:\$port. Press RETURN to stop ...")
 
   StdIn.readLine()
 
