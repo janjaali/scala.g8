@@ -3,7 +3,7 @@ package $organization$.$project_name$
 import akka.http.scaladsl.testkit.ScalatestRouteTest
 import org.scalatest.{Matchers, WordSpec}
 
-class ServerSpec extends WordSpec with Matchers with ScalatestRouteTest with AnalysisResultJsonSupport {
+class ServerSpec extends WordSpec with Matchers with ScalatestRouteTest {
 
   // we have to call the main method manually to ensure all fields are initialized (see scala.App extends DelayedInit).
   Server.main(null)
