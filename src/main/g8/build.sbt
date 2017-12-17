@@ -7,8 +7,6 @@ scalaVersion := "2.12.2"
 assemblyOutputPath in assembly := file("target/$project_name$.jar")
 
 val dependencies = Seq(
-  "com.typesafe.akka" %% "akka-http" % "10.0.9",
-
   "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2",
   "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
