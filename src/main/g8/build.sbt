@@ -18,7 +18,6 @@ val dependencies = Seq(
 )
 
 val testDependencies = Seq(
-  "com.typesafe.akka" %% "akka-http-testkit" % "10.0.9" % Test,
   "org.scalatest" %% "scalatest" % "3.0.1" % Test
 )
 
