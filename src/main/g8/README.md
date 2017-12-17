@@ -1,10 +1,13 @@
 # $project_name$
 
-# Run
+## Run
+
 sbt run
 
-# Test
+## Test
+
 sbt test
 
-# Assembly
+## Assembly
+
 sbt assembly
