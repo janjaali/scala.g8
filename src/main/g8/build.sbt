@@ -1,8 +1,14 @@
 name := "$project_name$"
 
+organization := "$organization$"
+
 version := "1.0.0-SNAPSHOT"
 
 scalaVersion := "2.12.4"
+
+licenses := Seq("MIT License" -> url("https://opensource.org/licenses/MIT"))
+
+homepage := Some(url("$project_url$"))
 
 assemblyOutputPath in assembly := file("target/$project_name$.jar")
 
