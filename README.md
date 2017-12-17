@@ -1,9 +1,11 @@
-# akka-http.g8
-Simple g8 skeleton for akka-http (scala api)
+# scala.g8
 
-# Usage
+g8 skeleton for scala projects.
+
+## Usage
+
 Giter the template
 
-```
-g8 janjaali/akka-http.g8
+```shell
+g8 janjaali/scala.g8
 ```
