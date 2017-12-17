@@ -2,7 +2,7 @@ name := "$project_name$"
 
 version := "1.0.0-SNAPSHOT"
 
-scalaVersion := "2.12.2"
+scalaVersion := "2.12.4"
 
 assemblyOutputPath in assembly := file("target/$project_name$.jar")
 
