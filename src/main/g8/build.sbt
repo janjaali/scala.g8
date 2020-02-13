@@ -21,5 +21,4 @@ lazy val app = (project in file("app"))
       "org.scalatest" %% "scalatest" % "3.0.8" % Test
     )
   )
-
-assemblyOutputPath in assembly := file("target/$project_name$.jar")
+  .enablePlugins(JavaAppPackaging)
