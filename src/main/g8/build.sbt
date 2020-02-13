@@ -19,6 +19,8 @@ lazy val app = (project in file("app"))
       "ch.qos.logback" % "logback-classic" % "1.2.3",
 
       "org.scalatest" %% "scalatest" % "3.0.8" % Test
-    )
+    ),
+
+    packageName in Docker := "$organization$/$project_name;format="lower,hyphen"$"
   )
   .enablePlugins(JavaAppPackaging)
