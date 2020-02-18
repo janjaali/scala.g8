@@ -1,4 +1,4 @@
-ThisBuild / name := "$project_name$"
+ThisBuild / name := "$project_name;format="lower,hyphen"$"
 
 ThisBuild / organization := "$organization$"
 
@@ -12,7 +12,7 @@ lazy val app = (project in file("app"))
   .settings(
     name := "app",
 
-    mainClass in Compile := Some("$organization$.$project_name$"),
+    mainClass in Compile := Some("$organization$.$project_name;format="space,Camel"$"),
 
     libraryDependencies ++= Seq(
       "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
