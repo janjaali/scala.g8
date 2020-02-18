@@ -15,9 +15,11 @@ lazy val app = (project in file("app"))
     mainClass in Compile := Some("$organization$.$project_name;format="space,Camel"$"),
 
     libraryDependencies ++= Seq(
-      "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
+      // logging
       "ch.qos.logback" % "logback-classic" % "1.2.3",
+      "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
 
+      // tests
       "org.scalatest" %% "scalatest" % "3.0.8" % Test
     ),
 
