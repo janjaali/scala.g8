@@ -20,7 +20,7 @@ lazy val app = (project in file("app"))
       "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
 
       // tests
-      "org.scalatest" %% "scalatest" % "3.0.8" % Test
+      "org.scalatest" %% "scalatest" % "3.1.0" % Test
     ),
 
     packageName in Docker := "$organization$/$project_name;format="lower,hyphen"$"
