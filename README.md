@@ -1,6 +1,6 @@
 # scala.g8
 
-g8 skeleton for scala projects.
+[Giter8] template skeleton for scala projects.
 
 ## Usage
 
@@ -15,5 +15,9 @@ g8 janjaali/scala.g8
 To test the template locally create a new directory and run:
 
 ```shell
-g8 file://templateDirPath/
+mkdir testDir
+cd testDir
+g8 file://../scala.g8/
 ```
+
+[Giter8]: http://www.foundweekends.org/giter8/
