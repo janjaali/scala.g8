@@ -35,7 +35,7 @@ sbt "app/docker:publishLocal"
 This will build and publish an image called "$organization$/$project_name;format="lower,hyphen"$:1.0.0-SNAPSHOT". You can run the image via:
 
 ```shell
-docker run -it com.organization/my-project:1.0.0-SNAPSHOT
+docker run -it $organization$/$project_name;format="lower,hyphen"$:1.0.0-SNAPSHOT
 ```
 
 ## Test
